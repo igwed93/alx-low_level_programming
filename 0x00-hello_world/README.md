@@ -5,3 +5,4 @@ Starting to code in C
 3-name compiles a C file and creates an executable named cisfun
 4-puts writes a stream of string to the standard output
 5-printf prints a string to the standard output
+6-size prints the size of various types on the computer it is run on
