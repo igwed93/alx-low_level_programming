@@ -6,3 +6,4 @@ Starting to code in C
 4-puts writes a stream of string to the standard output
 5-printf prints a string to the standard output
 6-size prints the size of various types on the computer it is run on
+100-intel generates the assembly code (Intel syntax) of a C code and save it in an output file
