@@ -4,19 +4,20 @@
 /**
  * main - Entry point
  *
- * Retrun: Always 0 (Succes)
+ * Return: Always 0 (Succes)
  *
  * This porgram prints all alphabets in lowercase but skips the letter q and e
  */
 int main(void)
 {
-	char low;
+	char low, e, q;
+
+	e = 'e';
+	q = 'q';
 
 	for (low = 'a'; low <= 'z'; low++)
 	{
-		if ((low == 'e') || (low =='q'))
-			low++;
-		else
+		if ((low != e) && (low != q))
 			putchar(low);
 	}
 	printf("\n");
