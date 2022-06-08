@@ -8,3 +8,4 @@ Introduction to conditonal statements "if, else, while"
 6-print_numberz.c prints all single digits of base 10 and then a new line
 7-print_tebahpla.c prints the lower case alphabets in reverse order
 8-print_base16.c prints all the numbers of base 16 in lowercase
+9-print_comb.c prints all possible combinations of single-digit numbers
