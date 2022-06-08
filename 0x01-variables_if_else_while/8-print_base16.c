@@ -19,11 +19,10 @@ int main(void)
 	for (i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
-		if (i > '9')
-		{
-			for (low = 'a'; low < 'f'; low++)
-				putchar(low);
-		}
+	}
+	for (low = 'a'; low <= 'f'; low++)
+	{
+		putchar(low);
 	}
 	putchar('\n');
 
