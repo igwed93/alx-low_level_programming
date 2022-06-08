@@ -15,11 +15,7 @@ int main(void)
 
 	for (n = 1; n < 90; n++)
 	{
-		for ()
-		{
-			putchar((n / 10) + '0');
-			putchar((n % 10) + '0');
-		}
+		putchar((n % 10) + '0');
 
 		if (n != 89)
 		{
