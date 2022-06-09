@@ -11,14 +11,18 @@
  */
 int main(void)
 {
-	int n;
+	int m, n;
 
-	for (n = 1; n < 90; n++)
+	for (m = 0; m < 9; m++)
 	{
-		putchar((n % 10) + '0');
-
-		if (n != 89)
+		for (n = m + 1; n <= 9; n++)
 		{
+			putchar((m % 10) + '0');
+			putchar((n % 10) + '0');
+			if (m == 8 && n == 9)
+			{
+				continue;
+			}
 			putchar(',');
 			putchar(' ');
 		}
