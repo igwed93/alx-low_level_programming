@@ -3,17 +3,17 @@
 /**
  * _abs - computes the absolute value of any given integer
  *@n: the integer that is computed
- * Return: always 0 (Success)
+ * Return: the computed absolute value is returned.
  */
 int _abs(int n)
 {
 	if (n < 0)
 	{
 		n *= -1;
-		_putchar(n);
+		return (n);
 	}
 	else if (n >= 0)
 	{
-		putchar(n);
+		return (n);
 	}
 }
