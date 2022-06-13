@@ -9,15 +9,20 @@ void jack_bauer(void)
 {
 	int i, j, k, l;
 
+	i = 0;
+
 	while (i < 3)
 	{
+		j = 0;
 		while (j < 4)
 		{
+			k = 0;
 			while (k <= 5)
 			{
 				for (l = 0; l < 10; l++)
 				{
 					_putchar(i + j + ':' + k + l);
+					_putchar('\n');
 				}
 				k++;
 			}
