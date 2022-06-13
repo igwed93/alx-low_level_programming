@@ -11,10 +11,10 @@ void jack_bauer(void)
 
 	i = 0;
 
-	while (i < 3)
+	while (i <= 2)
 	{
 		j = 0;
-		while (j < 4)
+		while (j <= 3)
 		{
 			k = 0;
 			while (k <= 5)
