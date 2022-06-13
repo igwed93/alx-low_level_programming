@@ -5,3 +5,4 @@ This is the readme file for this directory
 3-islower.c checks for lowercase
 4-isalpha.c checks for alphabetic characters
 6-abs computes the absolute value of a given integer
+7-print_last_digit.c prints the last digit of a number
