@@ -4,3 +4,4 @@ This is the readme file for this directory
 2-print_alphabet_x10.c prints 10 times the alphabets
 3-islower.c checks for lowercase
 4-isalpha.c checks for alphabetic characters
+6-abs computes the absolute value of a given integer
