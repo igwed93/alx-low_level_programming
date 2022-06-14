@@ -5,6 +5,8 @@
 /**
  * puts_half - prints half of a string
  * @str: string parameter
+ *
+ * Return: void
  */
 void puts_half(char *str)
 {
@@ -14,10 +16,13 @@ void puts_half(char *str)
 	int x = strlen(str);
 
 	if (x % 2)
+	{
 		n = ((x - 1) / 2) + 1;
-	else
-		n = x / 2;
-	for (i = n; i <= x; i++)
+	} else
+	{
+		n = (x / 2);
+	}
+	for (i = n; i < x; i++)
 	{
 		_putchar(str[i]);
 	}
