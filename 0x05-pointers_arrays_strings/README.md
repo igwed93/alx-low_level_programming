@@ -8,3 +8,4 @@
 7-puts_half.c prints half of a string
 prints n elements of an array of integers
 copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
+100-at0i.c converts a string to an integer
