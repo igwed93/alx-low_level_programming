@@ -6,3 +6,4 @@ This is the readme file for 0x06-pointers_arrays_strings
 4-rev_array.c reverses an array of integers
 5-string_toupper.c changes all lowercase letters of a string to uppercase
 6-cap_string.c capitalizes all words of a string
+7-leet.c encodes a string into 1337
