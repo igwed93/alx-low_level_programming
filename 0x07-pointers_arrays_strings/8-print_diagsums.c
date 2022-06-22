@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * print_diagsums - function that prints the sum of the two diagonals of a square matrix of integers
+ * print_diagsums - function that prints the sum of
+ *the two diagonals of a square matrix of integers
  * @a: square matrix
  * @size: size of square matrix
  *
