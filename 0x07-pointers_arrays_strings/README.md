@@ -7,3 +7,4 @@ This is the readme file for this directory
 5-strstr.c is a function that locates a substring
 7-print_chessboard.c prints a chessboard
 8-print_diagsums.c is a function that prints the sum of the two diagonals of a square matrix of integers
+100-set_string.c sets the value of a pointer to a character
