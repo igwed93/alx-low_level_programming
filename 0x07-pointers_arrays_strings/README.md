@@ -6,3 +6,4 @@ This is the readme file for this directory
 4-strpbrk is a function that searches a string for any of a set of bytes
 5-strstr.c is a function that locates a substring
 7-print_chessboard.c prints a chessboard
+8-print_diagsums.c is a function that prints the sum of the two diagonals of a square matrix of integers
