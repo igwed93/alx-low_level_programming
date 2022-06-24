@@ -4,3 +4,4 @@ This is the readme file for 0x08-recursion
 2-strlen_recursion.c is a function that returns the length of a string
 3-factorial.c is a function that returns the factorial of a positive integer
 4-pow_recursion.c returns raises an int x to the power of an int y
+5-sqrt_recursion is a function that returns the natural square root of a number
