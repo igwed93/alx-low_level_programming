@@ -3,3 +3,4 @@ This is the readme file for 0x08-recursion
 1-print_rev_recursion.c is a function that reverses a string
 2-strlen_recursion.c is a function that returns the length of a string
 3-factorial.c is a function that returns the factorial of a positive integer
+4-pow_recursion.c returns raises an int x to the power of an int y
