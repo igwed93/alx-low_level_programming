@@ -6,3 +6,4 @@ This is the readme file for 0x08-recursion
 4-pow_recursion.c returns raises an int x to the power of an int y
 5-sqrt_recursion is a function that returns the natural square root of a number
 6-is_prime_number is a funciton that tests for the primality of a number
+100-is_palindrome.c is a function that checks if a string is a palindrome.
