@@ -16,16 +16,20 @@ char *_strdup(char *str)
 	unsigned int i, len;
 	char *str2;
 
-	i = 0;
-	len = strlen(str);
-	str2 = malloc(len * sizeof(char));
+	for (len = 0; str[len] != '\0'; len++) /*calculate the length of str*/
+	{
+		continue;
+	}
 
-	if (str == 0 || str2 == 0)
+	str2 = malloc(len * sizeof(char)); /*Determine that malloc didn't fail*/
+
+	if (str == NULL || str2 == NULL)
 		return (0);
-	while (len--)
+
+	for (i = 0; i < len; i++)
 	{
 		str2[i] = *(str + i);
-		i++;
 	}
+	str2[i] = '\0';
 	return (str2);
 }
