@@ -16,15 +16,17 @@ char *_strdup(char *str)
 	unsigned int i, len;
 	char *str2;
 
+	if (str == NULL)
+		return (NULL);
 	for (len = 0; str[len] != '\0'; len++) /*calculate the length of str*/
 	{
 		continue;
 	}
 
-	str2 = malloc(len * sizeof(char)); /*Determine that malloc didn't fail*/
+	str2 = malloc(len * sizeof(char));
 
-	if (str == NULL || str2 == NULL)
-		return (0);
+	if (str2 == NULL) /*Determine that malloc didn't fail*/
+		return (NULL);
 
 	for (i = 0; i < len; i++)
 	{
