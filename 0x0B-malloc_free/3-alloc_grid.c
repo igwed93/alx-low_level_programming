@@ -20,11 +20,23 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	arr = (int **)malloc(height * sizeof(int));
 
-	if (arr == 0) /*determine that malloc did not fail*/
+	if (arr == NULL) /*determine that malloc did not fail*/
+	{
+		free(arr);
 		return (NULL);
+	}
 	for (i = 0; i < height; i++)
 	{
 		arr[i] = (int *)malloc(width * sizeof(int));
+		if (arr[i] == NULL)
+		{
+			for (; i >=  0; i--)
+			{
+				free(arr[i]);
+			}
+			free(arr);
+			return (NULL);
+		}
 	}
 
 	/*intialize all elements of the array to zero*/
