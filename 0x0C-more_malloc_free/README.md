@@ -1,0 +1,1 @@
+0x0C C-malloc, free hosts functions/programs that exemplify the usage of malloc, calloc, realloc, and free
