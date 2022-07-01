@@ -13,7 +13,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr; /*Declare a pointer to be used*/
+	char *ptr; /*Declare a pointer to be used*/
 
 	/*reserve memory spaces in heap*/
 	ptr = calloc(nmemb, size);
@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 
-	/*if nmemb or size is 0 return NULL*/
+	/*verify that input parameters are not NULL*/
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	return (ptr);
