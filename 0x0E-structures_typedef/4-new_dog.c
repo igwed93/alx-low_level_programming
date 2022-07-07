@@ -21,49 +21,34 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(n_dog);
 		return (NULL);
 	}
-	/* calc length of string member, *name */
-	i = 0;
+	i = 0; /* calc length of string member, *name */
 	while (name[i] != '\0')
 		i++;
-
-	/* calc the length of string member, *owner */
-	j = 0;
+	j = 0; /* calc the length of string member, *owner */
 	while (owner[j] != '\0')
 		j++;
 
-	/* allocate memory for *name */
+	/* allocate memory for *name and owner*/
 	n_dog->name = malloc(sizeof(n_dog->name) * i);
-
-	/* verify that malloc did not fail */
-	if (n_dog->name == NULL)
+	if (n_dog->name == NULL) /*verify that malloc didn't fail*/
 	{
 		free(n_dog->name);
 		free(n_dog);
 		return (NULL);
 	}
-
-	/* Assign name */
-	for (k = 0; k <= i; k++)
+	for (k = 0; k <= i; k++) /*Assign name*/
 		n_dog->name[k] = name[k];
+	n_dog->age = age; /* Assign age */
 
-	/* Assign age */
-	n_dog->age = age;
-
-	/* allocate memory for *owner */
 	n_dog->owner = malloc(sizeof(n_dog->owner) * j);
-
-	/* verify that malloc did not fail */
-	if (n_dog->owner == NULL)
+	if (n_dog->owner == NULL) /*verify that malloc didn't fail*/
 	{
 		free(n_dog->owner);
 		free(n_dog->name);
 		free(n_dog);
 		return (NULL);
 	}
-
-	/* Assign owner */
-	for (k = 0; k <= j; k++)
+	for (k = 0; k <= j; k++) /*Assign owner*/
 		n_dog->owner[k] = owner[k];
-
 	return (n_dog);
 }
