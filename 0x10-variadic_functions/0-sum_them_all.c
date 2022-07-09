@@ -7,11 +7,7 @@
  * @n: thenumber of arguments passed to the function
  * @...: variadic parameters
  *
- * Description: sum_them_all is a variadic funtion that gets the sum
- * of its named and unnamed arguments.
- *
- * Return: Always 0 (success).
- * Author: Daniel Igwe.
+ * Return: 0 if n is zero, otherwise the sum of all parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -20,6 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	sum = 0;
 	va_start(ap, n);
+
 	for (i = 0; i < n; i++)
 		sum += va_arg(ap, int);
 
