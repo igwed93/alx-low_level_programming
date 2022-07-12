@@ -12,12 +12,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int task, x, y;
-
-	x = atoi(argv[1]);
-	y = atoi(argv[3]);
-	task = (*get_op_func(argv[2]))(x, y);
-
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -37,13 +31,13 @@ int main(int argc, char *argv[])
 	}
 
 	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0)
-			&& y == 0)
+			&& atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", task);
+	printf("%d\n", (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
 
