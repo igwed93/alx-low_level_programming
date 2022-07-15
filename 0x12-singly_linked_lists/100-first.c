@@ -5,7 +5,7 @@
  *
  * Return: void
  */
-void funny_func(void)__attribute__((constructor))
+void funny_func(void)__attribute__((constructor));
 
 void funny_func(void)
 {
