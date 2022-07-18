@@ -11,7 +11,7 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	/* allocate node */
-	listint_t *new = (listint_t *)malloc(sizeof(listint_t));
+	listint_t *new = malloc(sizeof(listint_t));
 
 	/* verify that malloc did not fail */
 	if (new == NULL)
