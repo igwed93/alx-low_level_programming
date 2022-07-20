@@ -6,3 +6,4 @@
 4-free_listint.c is a function that frees a listint_t list
 is  a function that frees a listint_t list and sets the head of the list to NULL
 5-free_listint.c is a function that frees a listint_t list
+6-pop_listint.c is a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n)
