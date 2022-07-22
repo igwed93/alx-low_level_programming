@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - a function that returns the 
+ * get_bit - a function that returns the
  * value of a bit at a given index
  * @n: bit sequence
  * @index: the index of the bit to return
@@ -15,7 +15,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	d_binary = (sizeof(n) * 8);
 	if (index < d_binary)
- 	{
+	{
 		return (((1 << index) & n) >> index);
 	}
 	return (-1);
