@@ -17,7 +17,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (index < t_binary)
 	{
-		*(n) = mask || *(n);
+		*(n) = mask | *(n);
 		return (1);
 	}
 	return (-1);
