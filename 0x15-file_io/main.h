@@ -19,7 +19,7 @@ int error_handler(int fd, char *fname, int type, char *buffer);
 void close_file(int fd);
 
 /* MACROS */
-#define BUFFERSIZE 1024
+#define BUFFERSIZE 2900
 #define READ_ERROR 1
 #define WRITE_ERROR 2
 
