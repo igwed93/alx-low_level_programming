@@ -76,8 +76,8 @@ char *make_buffer(char *fName)
  */
 int main(int argc, char *argv[])
 {
-	int fd_src, fd_dest, output;
-	char *file_t; /*buffer*/
+	int fd_src, fd_dest, result;
+	char *buffer; /*buffer*/
 
 	if (argc != 3)
 	{
@@ -89,26 +89,26 @@ int main(int argc, char *argv[])
 	if (fd_src < -1)
 		exit(err_handler(fd_src, argv[1], READ_ERROR, NULL));
 
-	file_t = make_buffer(argv[2]);
+	buffer = make_buffer(argv[2]);
 
 	umask(0);
 	fd_dest = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_dest < -1)
-		exit(err_handler(fd_dest, argv[2], WRITE_ERROR, file_t));
+		exit(err_handler(fd_dest, argv[2], WRITE_ERROR, buffer));
 
 	do {
-		output = read(fd_src, file_t, BUFFERSIZE);
-		if (output == -1)
-			exit(err_handler(output, argv[1], READ_ERROR, file_t));
-		output = write(fd_dest, file_t, output);
-		if (output == -1)
-			exit(err_handler(output, argv[2], WRITE_ERROR, file_t));
+		result = read(fd_src, buffer, BUFFERSIZE);
+		if (result == -1)
+			exit(err_handler(result, argv[1], READ_ERROR, buffer));
+		result = write(fd_dest, file_t, result);
+		if (result == -1)
+			exit(err_handler(result, argv[2], WRITE_ERROR, buffer));
 		fd_dest = open(argv[2], O_RDWR | O_APPEND);
 		if (fd_dest == -1)
-			exit(err_handler(fd_dest, argv[2], WRITE_ERROR, file_t));
-	} while (output > 0);
+			exit(err_handler(fd_dest, argv[2], WRITE_ERROR, buffer));
+	} while (result > 0);
 	close_file(fd_src);
 	close_file(fd_dest);
-	free(file_t);
+	free(buffer);
 	return (0);
 }
