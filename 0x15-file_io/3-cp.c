@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 		result = write(fd_dest, buffer, result);
 		if (result == -1)
 			exit(err_handler(result, argv[2], WRITE_ERROR, buffer));
-		fd_dest = open(argv[2], O_RDWR | O_APPEND | O_TRUNC);
+		fd_dest = open(argv[2], O_RDWR | O_APPEND);
 		if (fd_dest == -1)
 			exit(err_handler(fd_dest, argv[2], WRITE_ERROR, buffer));
 	} while (result > 0);
