@@ -13,7 +13,7 @@ size_t dlistint_len(const dlistint_t *h)
 	size_t elm = 1;
 	const dlistint_t *tmp = h;
 
-	if (h == 0 or h == NULL)
+	if (h == 0 || h == NULL)
 		return (0);
 
 	while (tmp->next != NULL)
