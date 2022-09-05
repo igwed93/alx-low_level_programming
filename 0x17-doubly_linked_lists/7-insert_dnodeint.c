@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_node - function that inserts a node into a 
+ * insert_node - function that inserts a node into a
  * specific index of a list.
  * @tmp: ptr to nth position node in doubly linked list.
  * @n: data of the new node
@@ -44,8 +44,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (add_dnodeint(h, n));
 	}
-	
-	if (*h == NULL )
+
+	if (*h == NULL)
 		return (NULL);
 
 	tmp = *h;
