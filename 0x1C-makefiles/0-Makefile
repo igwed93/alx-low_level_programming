@@ -1,7 +1,9 @@
 # Usage:
 # make        # compile all binary
 
-.MAIN = all
+.PHONY = all
 
-all:
-    gcc *.c -o school
+all: school
+
+school: school.c main.c 
+	gcc main.c school.c -o school
