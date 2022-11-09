@@ -8,7 +8,7 @@ all: school
 
 CC = gcc
 
-SRC := $(Wildcard *.c)
+SRC = $(wildcard *.c)
 
 school: main.c school.c
-	${CC} $^ -o $@
+	${CC} ${SRC} -o $@
