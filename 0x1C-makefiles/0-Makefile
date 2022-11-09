@@ -1,0 +1,7 @@
+# Usage:
+# make        # compile all binary
+
+.MAIN = all
+
+all:
+    @gcc *.c -o school
