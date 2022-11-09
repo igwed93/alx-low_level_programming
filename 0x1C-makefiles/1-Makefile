@@ -1,0 +1,14 @@
+# Usage:
+# make		# compile all binary
+
+
+.PHONY = all
+
+all: school
+
+CC = gcc
+
+SRC := $(Wildcard *.c)
+
+school: main.c school.c
+	${CC} $^ -o $@
