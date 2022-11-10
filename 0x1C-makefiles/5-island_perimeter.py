@@ -25,6 +25,4 @@ def island_perimeter(grid):
         if (grid[v]).count(1) > 1:
             horizontal += (grid[v]).count(1)
         continue
-    print(vertical)
-    print(horizontal)
     return (2*(vertical + horizontal))
